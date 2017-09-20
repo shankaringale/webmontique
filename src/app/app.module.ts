@@ -7,8 +7,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 //import { CreditCardDirectivesModule } from 'ng2-cc-library'
 /***     Coponents       ***/
 import { AppComponent } from './app.component';
+import { AppSettings } from './appSettings'
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { MenuComponent } from './header/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { Error404Component } from './errors/404.component';
 import { NewComponent } from './users/new.component'
@@ -37,6 +39,7 @@ import { GenralService } from './genral.service'
     AppComponent,
     HomeComponent,
     HeaderComponent,
+    MenuComponent,
     FooterComponent,
     Error404Component,
     NewComponent,
@@ -84,7 +87,7 @@ import { GenralService } from './genral.service'
     ReactiveFormsModule
   ],
   providers: [
-    GenralService
+    GenralService, AppSettings
   ],
   bootstrap: [AppComponent]
 })

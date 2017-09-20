@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { AppSettings } from './appSettings'
 import { Http, Headers, Response} from '@angular/http';
 import { Subject, Observable } from 'rxjs/Rx'
 import { IHeader } from "./header/header.model"
@@ -12,11 +13,9 @@ export class GenralService {
         
     }
 
-   
-
     getHeaderData():Observable<IHeader>{
 				
-		return this.http.get("http://localhost/datang/api/genral.php")
+		return this.http.get(AppSettings.API_ENDPOINT+"genral.php")
 		.map((res:Response) => res.json());
 
 	}	

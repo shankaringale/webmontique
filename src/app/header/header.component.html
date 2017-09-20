@@ -1,20 +1,22 @@
  <header>
-        <div class="top-header">
-         <div class="container">
-        <ul class="cnt-details">
-          
-            <li class="ctn-num"><a href="tel:{{headerData?.telephone}}">{{headerData?.telephone}}</a></li>
-           <li class="email"><a href="mailto:{{headerData?.email}}">{{headerData?.email}}</a></li>
-           
-        </ul>
-        </div>
-      </div>
-      <div class="bottom-header">
+    <div class="top-header">
+     <div class="container">
+    <ul class="cnt-details">
+      
+        <li class="ctn-num"><a href="tel:{{headerData?.telephone}}">{{headerData?.telephone}}</a></li>
+       <li class="email"><a href="mailto:{{headerData?.email}}">{{headerData?.email}}</a></li>
        
-        <div class="logo">
-          <a routerLink="/">
-            <img [src]="'assets/images/web-monetique-logo.png'">
-          </a>
-        </div>
-      </div>
-    </header>
+    </ul>
+    </div>
+  </div>
+  <div class="bottom-header">
+   
+    <div class="logo">
+      <a routerLink="/">
+        <img [src]="'assets/images/web-monetique-logo.png'">
+      </a>
+    </div>
+  </div>
+</header>
+    
+<app-menu></app-menu>
