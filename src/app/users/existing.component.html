@@ -1,0 +1,60 @@
+<div class="nav-menu">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+         
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a routerLink="/">Home</a></li>
+            <li><a href="#">Contrats annuels  </a></li>
+            <li><a href="#">Contrats full services</a></li> 
+            <li><a href="#">Contrats saisonniers et ponctuels  </a></li>
+            <li><a href="#">Contrats d'abonnements GPRS et ADSL </a></li> 
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+</div>
+<div class="page-title">
+     <h1>Déjà client </h1>
+</div>
+<div class="container existng-cust-form a-center">
+     <p>Vous êtes déjà client chez WEB Monétique et vous souhaitez passer une nouvelle commande. Merci. Grace à votre numéro de <br/>  client figurant sur votre facture, et votre numéro de domiciliation à sept chiffres, nous récupérons l’ensemble de vos informations. Il vous suffira de compléter la date <br/>de location souhaitée, l’adresse de livraison et le nombre de TPE.</p>  
+   
+
+     
+    <div class="existing-cust-order">
+         <form [formGroup]="existingCustomerForm"  autocomplete="off" (ngSubmit)="loadSession(existingCustomerForm.value)">
+            
+                <div [ngClass]="{'error': clientId.invalid && clientId.dirty}">
+                    <label class="m-b-0" for="clientId">Entrez votre numéro de client</label>
+                    <span>(Il figure sur votre dernière facture)</span>
+                     <em *ngIf="clientId.invalid && clientId.dirty && clientId?.errors.required">Required</em>
+
+                     <em *ngIf="clientId.invalid && clientId.dirty && clientId?.errors.whitespace && !clientId?.errors.required">Whitespace not allowed </em>
+                    <input class="m-top-20 m-b-0" type="text"  formControlName="clientId" id="clientId"  />
+                </div>
+              
+                <div [ngClass]="{'error': clientCardNum.invalid && clientCardNum.dirty}">
+                    <label class="m-top-20" for="clientCardNum">Numéro de domiciliation carte bancaire</label>
+
+                     
+                    <em *ngIf="clientCardNum.invalid && clientCardNum.dirty && clientCardNum?.errors.required">Required</em>
+
+                    <em *ngIf="clientCardNum.invalid && clientCardNum.dirty && !clientCardNum?.errors.ccNumber && !clientCardNum?.errors.required">Invalid card number</em>
+
+                    <input type="tel" formControlName="clientCardNum" name="clientCardNum" id="clientCardNum" ccNumber/>
+                </div>    
+            <input type="submit" value="SUBMIT" [disabled]="existingCustomerForm.invalid"/>
+
+         </form>
+    </div>
+         
+</div>

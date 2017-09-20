@@ -1,0 +1,389 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"array\t$… = array (…)"
+			],
+			[
+				"R",
+				"Response\talias"
+			],
+			[
+				"con",
+				"console\tvar"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"pro",
+				"productService\tproperty"
+			],
+			[
+				"pri",
+				"private\tkeyword"
+			],
+			[
+				"I",
+				"IProduct\tinterface"
+			],
+			[
+				"pr",
+				"product.service\tscript"
+			],
+			[
+				"p",
+				"params\tproperty"
+			],
+			[
+				"st",
+				"String\tinterface"
+			],
+			[
+				"s",
+				"styleUrls\tproperty"
+			],
+			[
+				"template",
+				"templateUrl\tproperty"
+			],
+			[
+				"Com",
+				"Component\talias"
+			],
+			[
+				"im",
+				"implements\tkeyword"
+			],
+			[
+				"prnt",
+				"print_r"
+			],
+			[
+				"mar",
+				"margin-right"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/www/monetique/README.md",
+		"/C/wamp/www/monetique-kit/universal-starter-master/custom-webpack/README.md",
+		"/C/wamp/www/monetique/cli/server.js",
+		"/C/wamp/www/monetique/custom-webpack/src/main.server.ts",
+		"/C/wamp/www/monetique/custom-webpack/src/app/server-app.module.ts",
+		"/C/wamp/www/monetique-kit/universal-starter-master/.vscode/settings.json",
+		"/C/wamp/www/monetique/cli/README.md",
+		"/C/wamp/www/monetique/cli/src/environments/environment.prod.ts",
+		"/C/wamp/www/monetique/cli/src/environments/environment.ts",
+		"/C/wamp/www/monetique/custom-webpack/README.md",
+		"/C/wamp/www/monetique/cli/src/app/app.server.module.ts",
+		"/C/wamp/www/monetique/custom-webpack/webpack/webpack.prod.js",
+		"/C/wamp/www/monetique/custom-webpack/webpack/webpack.server.js",
+		"/C/wamp/www/monetique/custom-webpack/src/app/browser-app.module.ts",
+		"/C/Users/user/AppData/Roaming/Skype/My Skype Received Files/Module on Prestashop - Quote request.txt",
+		"/D/Office Document/shankar_document/Devlopment server/OEMGroups.txt",
+		"/C/Users/user/AppData/Local/Temp/fz3temp-1/soaptest.php",
+		"/C/Users/user/AppData/Local/Temp/Temp1_ewimageopt-1.1.7.zip/step1/app/code/local/Extendware/EWCore/Model/Override/Mage/Core/Layout/Update.php",
+		"/D/Office Document/shankar_document/Devlopment server/server details.txt",
+		"/C/wamp/www/monetique/cli/src/main.ts",
+		"/D/Office Document/shankar_document/Devlopment server/magentodemo.txt",
+		"/C/wamp/www/angulart/cart/src/index.html",
+		"/D/Office Document/shankar_document/Devlopment server/nyosoyayo live details.txt",
+		"/C/wamp/www/angulart/cart/src/app/browser-app.module.ts",
+		"/C/wamp/www/angulart/cart/src/app/app.component.ts",
+		"/D/Office Document/shankar_document/Devlopment server/prestashopdemo.txt",
+		"/C/wamp/www/angulart/cart/src/app/app.module.ts",
+		"/C/wamp/www/angulart/MEA2N-master/client/app/services/task.service.ts",
+		"/C/wamp/www/angulart/MEA2N-master/client/app/components/tasks/task.component.ts",
+		"/C/wamp/www/angulart/MEA2N-master/client/app/components/tasks/task.ts",
+		"/C/wamp/www/angulart/cart/src/app/catalog/shared/product.service.ts",
+		"/C/wamp/www/datang/api/resttest.php",
+		"/C/Users/user/AppData/Local/Microsoft/Windows/INetCache/IE/F31TPQ1W/dslv_state[1].txt",
+		"/C/wamp/www/datang/api/products.php",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/shared/event.service.ts",
+		"/C/wamp/www/angulart/cart/src/app/home/productslider/productslider.component.ts",
+		"/D/Office Document/shankar_document/Devlopment server/server.txt",
+		"/C/Users/user/Downloads/WhatsApp Chat with Sanjay.txt",
+		"/E/songa from shereys/Agent-Vinod-2012-320Kbps(Songs.PK)/uttam bhau.txt",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/events-list.component.ts",
+		"/C/wamp/www/angulart/MEA2N-master/client/app/components/tasks/task.component.js",
+		"/C/wamp/www/angulart/cart/src/app/home/productslider/productslider.component.html",
+		"/C/wamp/www/angulart/cart/src/app/catalog/shared/product.model.ts",
+		"/C/wamp/www/angulart/MEA2N-master/client/index.html",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/events-list.component.html",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/events-thumbnail.component.ts",
+		"/C/wamp/www/angulart/cart/src/app/catalog/catalog.routes.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/app.module.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/shared/event.model.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/shared/index.ts",
+		"/C/wamp/www/angulart/cart/src/app/catalog/catalog.module.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/index.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/routes.ts",
+		"/C/Users/user/AppData/Local/Temp/fz3temp-1/debug.log",
+		"/C/Users/user/AppData/Local/Temp/fz3temp-1/exception.log",
+		"/C/wamp/www/angulart/cart/src/app/catalog/category.html",
+		"/C/wamp/www/angulart/cart/src/app/catalog/cateogry.component.ts",
+		"/C/wamp/www/angulart/cart/src/app/nav/navbar.component.html",
+		"/C/wamp/www/node/ng2-fundamentals/app/events-app.component.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/event-details/event-details.component.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/event-details/event-details.component.html",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/event-details/event-route-activator.service.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/event-details/create-session.component.html",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/create-event.component.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/create-event.component.html",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/event-details/session-list.component.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/event-details/create-session.component.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/event-details/session-list.component.js",
+		"/C/wamp/www/node/ng2-fundamentals/app/nav/navbar.component.html",
+		"/C/wamp/www/angulart/cart/src/app/catalog/category.css",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/shared/duration.pipe.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/shared/restricted-words.validator.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/user/login.component.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/event-details/session-list.component.html",
+		"/C/wamp/www/node/ng2-fundamentals/app/user/login.component.html",
+		"/C/wamp/www/node/ng2-fundamentals/app/user/user.routes.ts",
+		"/C/wamp/www/angulart/cart/src/app/+lazy/lazy.module.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/routes.js",
+		"/C/wamp/www/node/ng2-fundamentals/app/user/user.module.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/user/auth.service.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/user/user.model.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/user/auth.service.js",
+		"/C/wamp/www/angulart/cart/src/app/errors/404.component.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/events/events-list-resolver.service.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/errors/404.component.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/main.ts",
+		"/C/wamp/www/angulart/cart/src/app/home/home-view.component.ts",
+		"/C/wamp/www/angulart/cart/src/app/home/carousel/homecarousel.component.ts",
+		"/C/wamp/www/angulart/cart/src/app/home/productslider/productslider.css",
+		"/C/wamp/www/angulart/cart/src/app/home/carousel/homecarousel.component.html",
+		"/C/wamp/www/angulart/cart/src/app/home/carousel/carousel.component.ts",
+		"/C/wamp/www/angulart/cart/src/app/home/carousel/slide.component.ts",
+		"/C/wamp/www/angulart/cart/src/app/home/carousel/homecarsouel.component.ts",
+		"/C/wamp/www/angulart/cart/src/app/home/carousel/homecarousal.component.ts",
+		"/C/wamp/www/angulart/cart/src/app/home/carousel/homecarousal.component",
+		"/C/wamp/www/angulart/cart/src/app/nav/navbar.component.ts",
+		"/C/wamp/www/angulart/cart/src/app/footer/cartfooter.component.ts",
+		"/C/wamp/www/angulart/cart/src/app/footer/cartfooter.component.html",
+		"/C/wamp/www/angulart/cart/src/app/carousel/homecarousal.component",
+		"/C/wamp/www/angulart/cart/src/tsconfig.browser.json",
+		"/C/wamp/www/node/ng2-fundamentals/index.html",
+		"/C/wamp/www/angulart/cart/src/modules/ng2f-bootstrap/README.md",
+		"/C/wamp/www/angulart/cart/src/main.browser.ts",
+		"/C/wamp/www/angulart/cart/src/app/server-app.module.ts",
+		"/C/wamp/www/angulart/cart/src/modules/transfer-state/browser-transfer-state.module.ts",
+		"/C/wamp/www/angulart/cart/src/modules/transfer-state/transfer-state.ts",
+		"/C/wamp/www/angulart/cart/src/routes.ts",
+		"/C/wamp/www/angulart/cart/src/main.server.ts",
+		"/C/wamp/www/angulart/cart/src/app/header/app-header.component.ts",
+		"/C/wamp/www/node/ng2-fundamentals/app/nav/navbar.component.ts",
+		"/C/wamp/www/angulart/cart/node_modules/ngx-bootstrap/README.md",
+		"/C/wamp/www/angulart/cart/webpack.config.js",
+		"/C/wamp/www/node/ng2-fundamentals/systemjs.config.js",
+		"/C/wamp/www/angulart/MEA2N-master/client/app/app.component.spec.ts",
+		"/C/wamp/www/angulart/MEA2N-master/client/app/components/tasks/task.component.html",
+		"/D/Office Document/shankar_document/Clients/Johnson/Details.txt",
+		"/C/Users/user/AppData/Local/Temp/fz3temp-1/get.php",
+		"/D/Office Document/shankar_document/Estimations/magento websites.txt",
+		"/D/Office Document/shankar_document/Estimations/Magneto portfolio from george.txt",
+		"/C/wamp/www/angulart/MEA2N-master/client/app/app.component.html",
+		"/C/wamp/www/angulart/cart/webpack/helpers.js",
+		"/C/wamp/www/angulart/cart/webpack/webpack.client.js",
+		"/C/wamp/www/angulart/cart/webpack/webpack.server.js",
+		"/C/wamp/www/angulart/cart/src/tsconfig.server.json",
+		"/C/Users/user/AppData/Local/Temp/fz3temp-1/api.php",
+		"/C/wamp/www/angulart/MEA2N-master/client/app/main.ts",
+		"/C/wamp/www/angulart/MEA2N-master/client/app/app.component.ts",
+		"/C/wamp/www/angulart/MEA2N-master/client/app/app.module.ts"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"credit",
+			"model",
+			"principle",
+			"principlr ",
+			"smbc",
+			"payment",
+			"gmo",
+			"Karachi",
+			"Lahore",
+			"PAKISTAN",
+			"toUpperCase",
+			"container",
+			"footer-bottom",
+			"fa-facebook",
+			"saveStripeData",
+			"getOptionArray0",
+			" $objectManager = \\Magento\\Framework\\App\\ObjectManager::getInstance();\n    \t $productCollection = $objectManager->create('Magento\\Catalog\\Model\\ResourceModel\\Product\\Collection');\n    \t \n    \t\n    \t $productCollection->addAttributeToFilter('type_id', 'configurable');\n    \t $productCollection->load();\n    \t  echo $productCollection->count();\n    \tforeach ($productCollection as $p)\n\t\t {\n\t\t      echo \"<pre>\";\n            //  echo $p->getSku(); \n\n            $objectManager = \\Magento\\Framework\\App\\ObjectManager::getInstance();\n            $product = $objectManager->create('Magento\\Catalog\\Model\\Product')->load($p->getEntityId());\n\n            echo $product->getSku().\" => \".$product->getPrice();\n            $product->setPrice(ceil($product->getPrice()))->save(); \n            //break;  ",
+			"SHOW_WALKING_BILLBOARD",
+			"Magento\\Framework\\App\\View\\Asset\\MaterializationStrategy\\Symlink",
+			"tab",
+			".item-desc-inner",
+			".home-style-1 .sm-imageslider .item-info-slider .item-desc-inner",
+			"font",
+			"style",
+			".item-desc-inner",
+			".home-style-1 .sm-imageslider .item-info-slider .item-desc-inner",
+			"font",
+			".home-style-1 .sm-imageslider .item-info-slider .item-desc-inner",
+			"password",
+			"array",
+			"__PS_BASE_URI__"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Product Title",
+			"PRODUCT INFO"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "app.module.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 600.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 345.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
