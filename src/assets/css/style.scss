@@ -928,3 +928,20 @@ input[type=checkbox]:checked {
     background-color: #ffffff;
     border: solid 2px #3cbbd6;
 }
+
+.times-italic {
+	font-family:$Times-Reg-italic;
+}
+
+.squr {
+	padding:0;
+	li{
+	@include backgroundImg('../images/square-li-ico.png ', left center , no-repeat);
+	list-style-type: none;
+    padding-left: 30px;
+	}
+}
+.datefield.display-inl-blk{
+	width:auto;
+	display:inline-block;
+}

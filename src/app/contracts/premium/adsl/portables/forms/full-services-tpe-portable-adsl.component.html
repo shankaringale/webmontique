@@ -1,0 +1,444 @@
+
+                  
+<div class="page-title">
+  <h1>Contrat location annuelle full services TPE portable ADSL</h1>
+</div>
+<div class="container">
+  <div class="contract-form">
+    <div class="form-title-section form-border a-center">
+      <h1 class="heading">CONTRAT DE LOCATION D’UN TERMINAL DE PAIEMENT   ELECTRONIQUE AVEC MAINTENANCE,  
+                        
+        <br/>
+                    ASSISTANCE ET ABONNEMENT AUX FLUX MONETIQUE
+                      
+      </h1>    
+    </div>
+    <div class="sections-title">
+      <h2 class="heading">ENTRE:</h2>
+    </div>
+    <div class="org-info form-border">
+      <p>La  Société 
+                        
+        <strong>WEB MONETIQUE</strong>, spécialiste  des solutions  monétiques, dont  le siège  est sis  à 
+                        
+          <span class="txt-uppercase">PUYRICARD</span> (13540) 2295,  Route de Puyricard, immatriculée au R.C.S. d’Aix-en-Provence sous le n° 530 519 560, dûment représentée par Monsieur Dany 
+                        
+          <span class="txt-uppercase">RIEGEL</span>, Gérant en exercice 
+                      
+      </p>
+      <p>Téléphone :
+                          
+        <a href="tel:0634182759">06 34 18 27 59</a>      Télécopie : 
+                          
+        <a href="tel:0426780799">04 26 78 07 99 </a>
+      </p>
+      <p>Mail : 
+                          
+        <a href="Mailto:dany.riegel@web-monetique.fr">dany.riegel@web-monetique.fr</a>
+        <strong>Ci-après dénommée « WEB MONETIQUE »</strong>
+      </p>
+    </div>
+
+    <div class="sections-title">
+      <h2 class="heading">ET:</h2>
+    </div>
+    <form [formGroup]="contractForm" class="social-frm" (ngSubmit)="saveForm(existingCustomerForm.value)">
+      <div class="form-border">
+        <div class="field-set social-1" [ngClass]="{'error': social_reason.invalid && social_reason.dirty}">
+          <label>Raison Sociale : </label>          
+          <input type="text" formControlName="social_reason" />
+        </div>
+        <div class="field-set social-2">
+          
+            <label>Forme Juridique : </label>
+            <input [ngClass]="{'error-input': legal_form.invalid && legal_form.dirty}" class="Legal-form" type="text" formControlName="legal_form"/>
+                    
+            <label>N° R.C.S : </label>
+            <input [ngClass]="{'error-input': nrcs.invalid && nrcs.dirty}" class="nrcs" type="text" formControlName="nrcs"/>
+                   
+        </div>
+        <h3 class="form-subsec-heading">Adresse de facturation</h3>
+        <div class="field-set social-3">
+          <label>Adresse et N° Rue :</label>
+          <input [ngClass]="{'error-input': b_address_1.invalid && b_address_1.dirty}" class="address" type="text" formControlName="b_address_1" />
+          <input class="full-width" type="text" formControlName="b_address_2"/>
+        </div>
+        <div class="field-set social-4">
+          <label> Code postal :</label>
+          <input [ngClass]="{'error-input': b_postal_code.invalid && b_postal_code.dirty}" class="postl-cd" type="text" formControlName="b_postal_code" />
+          <label> Cedex :</label>
+          <input [ngClass]="{'error-input': b_cedex.invalid && b_cedex.dirty}" class="cedex" type="text" formControlName="b_cedex"/>
+          <label> Ville:</label>
+          <input [ngClass]="{'error-input': b_city.invalid && b_city.dirty}" class="ville" type="text" formControlName="b_city"/>
+        </div>
+      
+        <h3 class="form-subsec-heading">Adresse de livraison</h3>
+        <div class="field-set social-5">
+          <label>Raison sociale :</label>
+          <input class="lgl-frm" type="text" />
+          <label>Adresse et N° Rue :</label>
+          <input class="address-et" type="text" />
+          <input class="full-width" type="text" />
+        </div>
+        <div class="field-set social-6">
+          <label> Code postal :</label>
+          <input class="postl-cd" type="text" />
+          <label> Cedex :</label>
+          <input class="cedex" type="text" />
+          <label> Ville:</label>
+          <input class="ville" type="text" />
+        </div>
+        <h3 class="form-subsec-heading">Nom-Prénom et qualité du signature</h3>
+        <div class="field-set social-7">
+          <label> Nom :</label>
+          <input class="nom" type="text" />
+          <label> Prénom :</label>
+          <input class="prenom" type="text" />
+          <label> Qualité du signataire ::</label>
+          <input class="qualite-du m-tr-0" type="text" />
+        </div>
+        <div class="field-set social-8">
+          <label> Téléphone mobile :</label>
+          <input class="telephn-mob" type="text" />
+          <label> Téléphone fixe :</label>
+          <input class="telephn-fixe" type="text" />
+        </div>
+        <div class="field-set social-9">
+          <label> Mail :</label>
+          <input class="mail" type="text" />
+        </div>
+        <div class="field-set social-10">
+          <label> Numéro de domiciliation carte bancaire :</label>
+          <input class="numero-bancaire" type="text" />
+          <label> Numéro de domiciliation sans contact :</label>
+          <input class="numero-contact" type="text" />
+        </div>
+        <div class="field-set social-11">
+          <label> Numéro de domiciliation VAD :</label>
+          <input class="numero-vad" type="text" />
+          <label> Numéro de domiciliation AMEX :</label>
+          <input class="numero-amex" type="text" />
+        </div>
+        <div class="field-set social-12">
+          <label> Autre :</label>
+          <input class="autre" type="text" />
+        </div>
+
+        <p class="here-aftr">Ci-après dénommé(e) « LE CLIENT »</p>
+      </div>
+
+      <div class="customer-commitment small-font-info form-border m-top-30">
+        <div class="sections-title padding-lr-0">
+          <h2 class="heading underline">ENGAGEMENT DU CLIENT :</h2>
+        </div>
+        <p>Je  soussigné, 
+                            
+          <select class="commitmnt-selc">
+            <option>Monsieur</option>
+            <option>option2</option>
+            <option>option3</option>
+          </select>
+          <input class="commitmnt-inp" type="text" /> ès-qualités, certifie exact les renseignements figurant sur le présent contrat de location de Terminal de Paiement contentant contrat de maintenance, d’assistance et d’abonnement au flux monétique.
+                          
+        </p>
+        <p>Je reconnais avoir pris connaissance tant des conditions particulières (notamment celles ayant attrait aux tarifs applicables) que des conditions générales du présent contrat ci-après retranscrites, et les accepter dans toute leur teneur. </p>
+        <p>Je reconnais que le présent contrat est ferme et définitif, et ne dispose d’aucun délai de rétractation ; L’article 132-1 du Code de la Consommation, relatif aux clauses abusives insérées dans certains contrats n’étant pas ici applicable.
+                     </p>
+        <p>Enfin, je déclare avoir pris connaissance des frais de résiliation, notamment en cas de résiliation anticipée.  </p>
+      </div>
+
+      <div class="convention small-font-info form-border m-top-30">
+        <div class="sections-title padding-lr-0">
+          <h2 class="heading underline">CONVENTION: </h2>
+        </div>
+        <p>Les  présentes  ont  pour  objet  de  définir  les  termes  et  les  conditions  dans  lesquelles  la  Société  W EB  MONETIQUE  loue  au  client  un  terminal  de  paiement  (TPE)  comprenant contrat  de maintenance, d’assistance et abonnement aux flux monétique.</p>
+        <p>Par le présent contrat, et moyennant le respect des dispositions ci-après, et notamment celles afférentes au règlement des redevances convenues, la Société WEB MONÉTIQUE s’engage à fournir au CLIENT les prestations définies aux conditions particulières.   </p>
+        <p>Ces prestations sont liées exclusivement à l’utilisation du matériel monétique mis à disposition dans le cadre d’une location. Toutes ces prestations font l’objet d’une facturation unique.  </p>
+        <p>Le présent contrat est accepté par WEB MONÉTIQUE dans la limite de l’application des conditions tarifaires en vigueur à la date de la signature. Toute autre condition tarifaire ne pourra  être validée qu’après accord de la direction de WEB MONÉTIQUE.</p>
+      </div>
+
+      <div class="conditions-perticul form-border m-top-30">
+        <div class="sections-title m-b-25">
+          <h2 class="heading underline a-center">CONDITIONS PARTICULIERES: </h2>
+        </div>
+        <h3 class="form-subsec-heading display-inl-blk underline m-rt-15">Type d’abonnement :</h3>
+        <div class="display-inl-blk pull-right">
+          <h3 class="form-subsec-heading underline display-inl-blk m-rt-15">Nombre d’abonnement : </h3>
+          <input class="num-subscriptions" type="text" />
+        </div>
+        <h3 class="form-subsec-heading">Location d’un Terminal de Paiement portable IWL 250 BEM sans contact  </h3>
+        <h3 class="form-subsec-heading">Avec Maintenance - Assistance téléphonique et Abonnement flux monétique ADSL.</h3>
+        <h3 class="form-subsec-heading">Prêt gratuit d’un TPE GPRS en cas de panne de l’ADSL.  Location gratuite d’un TPE GPRS sur un week-end. Logiciels VAD offerts</h3>
+        <p>
+          <strong class="underline">Durée du contrat :</strong>Annuelle (DOUZE mois consécutifs à compter de ce jour) 
+                        
+        </p>
+        <p>
+          <span  class="underline">
+            <strong>Montant de la redevance mensuelle :</strong> 35,00 € HT – trente cinq euros HT.  
+          </span>               
+        </p>
+        <p>Payable  par prélèvement SEPA et trimestriellement</p>
+        <p>
+          <strong>Frais d’envoi :</strong> 10 euros H.T. sur la location ponctuelle et prêt de TPE 
+                          
+        </p>
+        <div class="field-set datefield  ">
+          <h3 class="form-subsec-heading underline m-top-50">Date de livraison souhaitée </h3>
+          <input class="datepicker datepicker-inp " type="text" />
+        </div>
+        <div class="field-set social-13 m-top-50 m-b-100">
+          <label> Fait à :</label>
+          <input class="Fait m-rt-15" type="text" />
+          <label> Le :</label>
+          <input class="Le" type="text" />
+        </div>
+      </div>
+
+      <div class="conditions-generales form-border m-top-30 small-font-info">
+        <div class="sections-title padding-lr-0">
+          <h2 class="heading underline ">CONDITIONS GENERALES : </h2>
+        </div>
+        <h4 class="small-headings">TITRE II – LOCATION DU TPE  </h4>
+        <p>Les présentes conditions générales ont pour objet de définir les termes et les conditions générales dans lesquelles la Société W EB MONETIQUE loue au CLIENT un terminal de paiement (TPE) comprenant la maintenance, l’assistance et éventuellement un abonnement au flux monétique.  </p>
+        <h4 class="small-headings">DÉFINITIONS  </h4>
+        <p>Au sens des présentes Conditions Générales de Location, on entend par :  </p>
+        <h4 class="small-headings">DÉFINITIONS  </h4>
+        <ul class="form-smll-lists">
+          <li>
+            <strong>- Client : </strong> :  Personne  physique  ou  morale  exerçant  une  activité commerciale,  artisanale,  professionnelle  ou  à  but  non  lucratif  qui  conclut  en  son  nom  et  pour  son compte les présentes et en devient le titulaire, pour ses besoins professionnels et pouvant justifier d’une immatriculation au Registre du commerce et des sociétés ou au Répertoire des métiers, pour les professions libérales de son affiliation à un ordre professionnel et pour les associations loi de 1901 d’une déclaration en Préfecture. 
+                            
+          </li>
+          <li>
+            <strong>- TPE : </strong>Terminal de paiement électronique. xsd
+                            
+          </li>
+          <li>
+            <strong>- Abonnement flux monétiques :</strong> il s’agit de l’abonnement pour flux monétique en provenance et à destination du Terminal de Paiement Electronique (ci-avant désigné dans les conditions particulières par le terme « TPE ») compatible du Client. Ces flux incluent les demandes d’autorisation, les opérations de télécollecte, de télé paramétrage et de téléchargement des TPE liés aux paiements par carte bancaire, ainsi que les flux liés à certaines applications privatives compatibles présentes sur le TPE sous réserve que les serveurs bancaires et constructeurs de TPE fonctionnent. La location du TPE GPRS/ADSL peut inclure cet abonnement.
+                            
+          </li>
+          <li>
+            <strong>- G.P.R.S. :</strong> Général Packet Radio Service ou service général de radiocommunication en mode paquet. Norme de transmission de données radio en mode paquet utilisée pour la transmission des transactions bancaires via un réseau mobile muni d’un module SIM d’accès au réseau GPRS. 
+                            
+          </li>
+          <li>
+            <strong>- A.D.S.L. : </strong>Asymmetric Digital Subscriber Line est une technique de communication numérique utilisée pour la transmission des transactions bancaires via une ligne téléphonique spécialisée et indépendante du réseau téléphonique. 
+                            
+          </li>
+          <li></li>
+        </ul>
+        <h4 class="small-headings">Article 1.1 – OBJET  </h4>
+        <p>Les présentes conditions générales ont pour objet de définir les termes et les conditions dans lesquelles la Société W EB MONETIQUE loue au client un terminal de paiement (TPE) comprenant contrat de maintenance et abonnement au flux monétique.  </p>
+        <h4 class="small-headings">Article 1.2 – DUREE</h4>
+        <p>Le présent contrat peut être conclu pour une durée minimale, ferme et définitive d’UN (1) an ou pour une durée ponctuelle déterminée aux conditions particulières.</p>
+        <p> La prise d’effet du présent contrat court à compter du jour de l’envoi du matériel par la Société W EB MONÉTIQUE. 
+                         </p>
+        <p>Le terme du contrat interviendra au jour de la 
+                            
+          <span class="underline">restitution effective</span> de la puce et de sa réception dans nos ateliers. 
+                          
+        </p>
+        <p>A défaut de résiliation ou de restitution effective de la puce à son terme il se poursuit pour une durée indéterminée par l’effet de la tacite reconduction. </p>
+        <h4 class="small-headings"> Article 1.3 – LIVRAISON  </h4>
+        <p>Le  TPE  sera  livré  au  Client  dans  un  délai  raisonnable  et  configuré  pour  permettre  un  usage  immédiat  du  Client.  Les  Parties  se  référant  à  la  date  de  livraison souhaitée par le Client telle que fixée dans les conditions particulières sous réserve de fournir à W EB MONÉTIQUE le numéro de  domiciliation bancaire, élément indispensable pour la souscription à l’abonnement au flux monétique et utile au paramétrage, préalable à toute livraison.  Le Client pourra obtenir le numéro de domiciliation bancaire en se rapprochant de sa banque auprès de laquelle il aura souscrit un contrat monétique. </p>
+        <h4 class="small-headings">Article 1.4 – RESILIATION – FRAIS DE RESILIATION </h4>
+        <p>En cas de résiliation, il est expressément convenu entre les Parties que toute période trimestrielle réglée restera acquise définitivement à WEB MONETIQUE, aucun prorata temporis de la redevance trimestrielle payée d’avance entre la date de résiliation et la fin du trimestre ne sera faite et restituée au CLIENT. </p>
+        <p>WEB MONÉTIQUE pourra si bon lui semble résilier le présent contrat pour inexécution par le CLIENT d’une quelconque obligation de location et d’entretien du matériel ou encore en cas de non règlement à son terme d’une seule échéance trimestrielle, et ceci après l’envoi d’une notification restée sans effet sous huit (8) jours.  </p>
+        <p>En cas de résiliation anticipée du contrat souscrit pour une durée annuelle, les frais de résiliation s’élèveront à DEUX (2) échéances trimestrielles H.T. si la durée effective du contrat après résiliation est inférieure à 12 mois (outre le trimestre en cours), et à UNE (1) échéance trimestrielle si la durée effective du contrat après résiliation est supérieur à 12 mois (outre le trimestre en cours).</p>
+        <p>Au-delà du terme initial du contrat souscrit pour une durée annuelle, dès lors que ledit contrat se poursuit pour une durée indéterminée le Client pourra, si bon lui semble, à tout moment, par lettre recommandée A.R., et moyennant un préavis de 30 jours résilier le présent contrat.</p>
+        <p>La résiliation sera effective au plus tôt 30 jours suivants la date de réception de la résiliation du client et au plus tard au jour de la réception du matériel dans nos ateliers, si la restitution du matériel intervenait au-delà des 30 jours.</p>
+        <h4 class="small-headings">Article 1.5  – SUSPENSION  </h4>
+        <p>WEB MONÉTIQUE se réserve le droit, conformément aux stipulations figurant aux présentes, de suspendre de plein droit l’acheminement des flux monétiques, sans préavis ni indemnité, compte tenu de la gravité des faits, dans les cas où : </p>
+        <ul class="form-smll-lists">
+          <li>- un quelconque acte de piratage ou de tentative d’utilisation illicite des flux monétiques, a pour cause ou origine le compte du Client ;</li>
+          <li>- l’adresse du Client telle que communiquée par celui-ci ne correspond pas à son adresse effective </li>
+          <li>- commercialisation du Service sous quelque forme que ce soit par un Client à un ou plusieurs tiers ou </li>
+          <li>- perturbation grave et/ou répétée du service par un terminal ou modem autre que celui pris en location ; </li>
+          <li>- en cas de non règlement à son terme d’une échéance trimestrielle.</li>
+        </ul>
+        <h4 class="small-headings">Article 1.6  –  PRIX ET MODALITES DE PAIEMENT - PENALITES </h4>
+        <p>Le montant de la redevance annuelle H.T. est fixé aux conditions particulières. La redevance est facturée annuellement et payable par trimestre et d’avance. </p>
+        <p>En  cas  de  souscription  d’un  contrat  d’une  durée inférieure  à  UN  (1)  an,  le  montant  de  la  redevance  H.T.  pour  la  durée  de  la  location,  ainsi  que  les  modalités et termes de règlement sont fixés aux conditions particulières.</p>
+        <p>Il est toutefois prévu qu’en cas de dépassement de 2000 connexions bancaires par mois, WEB MONÉTIQUE pourra réévaluer avec l’accord du client le montant de l’abonnement en fonction du dépassement.</p>
+        <p>Les factures sont payables à réception par prélèvement SEPA.</p>
+        <p>En cas de refus de prélèvement, il sera perçu une somme forfaitaire de 25 € HT par le prestataire au titre des frais de rejet.</p>
+        <p>Conformément  aux  dispositions  de  l’Article  L441-6  du  Code  de  commerce,  tout  retard  de  paiement  entraîne  de  plein  droit,  outre,  des  pénalités  de  retard  une obligation  pour  le  débiteur  de  payer  une  indemnité  forfaitaire  de  40  euros  de  frais  de  recouvrement.  Une  indemnité  complémentaire  pourra  être  réclamée,  sur justificatifs, lorsque les frais de recouvrement exposés sont supérieurs au montant de l’indemnité forfaitaire.</p>
+        <p>En outre, après envoi d’une mise en demeure de régulariser restée sans effet pendant un délai de huit (8) jours, le CLIENT sera redevable d’une pénalité de retard d’un montant de 30 % du montant total de la facture impayée par mois de retard, étant précisé que W EB MONETIQUE se réserve le droit de suspendre l’exécution des présentes sans indemnité si le Client ne s’acquitte pas des sommes dues.</p>
+      </div>
+
+      <div class="conditions-generales form-border m-top-30 small-font-info padding-b-100">
+        <h4 class="small-headings">Article 1.7 – RESERVE DE PROPRIETE </h4>
+        <p>Pendant la durée du présent contrat, le TPE demeure la propriété exclusive de WEB MONÉTIQUE. </p>
+        <p>Le Client ne peut donc effectuer aucun acte de disposition.</p>
+        <p>Le TPE ne peut en aucun cas notamment être cédé, sous-loué, transformé, donné en gage ou en nantissement, transféré ou prêté sous quelque forme que ce soit par le Client.</p>
+        <p>En cas de saisie ou de toute autre prétention d’un tiers à des droits sur le TPE, le Client est tenu de s’y opposer et d’en aviser immédiatement W EB MONÉTIQUE, afin de lui permettre de sauvegarder ses droits et le Client devra prendre toute mesure pour la sauvegarde du matériel et notamment faire diligence pour obtenir la mainlevée à ses frais.</p>
+        <p>Le Client s’engage à maintenir sur le TPE la mention de propriété de WEB MONETIQUE qui pourrait y être apposée.</p>
+        <h4 class="small-headings">Article 1.8 – CONDITIONS D’UTILISATION - ENTRETIEN </h4>
+        <p>Le Client s’engage à utiliser le matériel conformément aux conditions définies par W EB MONÉTIQUE et selon la  notice d’utilisation qui sera transmises au Client lors de la livraison du matériel.  </p>
+        <p>A défaut, le Client pourra en faire la demande à W EB MONÉTIQUE dans les dix jours suivants la livraison du matériel ou de la signature du contrat. WEB MONÉTIQUE s’engage à la lui faire parvenir dans les huit jours suivants la demande.</p>
+        <p>À compter de la livraison du TPE chez le Client et jusqu’à sa restitution à WEB MONÉTIQUE, le TPE est réputé être sous la garde et la responsabilité du Client.</p>
+        <p>A  cet  égard,  le  Client  est  tenu  d’assurer  le  maintien  en  bon  état  d’entretien  et  de  propreté  du  matériel  livré,  de  l’utiliser selon les directives qui lui seront données dans la documentation technique remise à la livraison. Il est interdit au Client d’intervenir lui-même sur le TPE afin d’y réaliser ou d’y faire réaliser des réparations.</p>
+        <h4 class="small-headings">Article 1.10 –  DECLARATION DU CLIENT </h4>
+        <p>Le Client déclare et garantit par les présentes à WEB MONÉTIQUE que, à la date des présentes et à tout moment pendant l’exécution du présent contrat :   </p>
+        <ul class="form-smll-lists">
+          <li> - le Client est valablement constitué, a le pouvoir et la faculté de conclure et d’exécuter le contrat, en ce compris tout acte ou document signé en relation avec ce dernier.  </li>
+          <li>-  la  signature  et  l’exécution  par  le  Client  des  documents  ont  été,  le  cas  échéant,  dûment  autorisées  par  tous  les  organes  sociaux  compétents  du  Client  et  le signataire bénéficiait des pouvoirs nécessaires pour le faire, </li>
+          <li>- il n’existe aucune poursuite ou procédure en cours ou sur le point d’être engagée qui pourrait avoir des conséquences préjudiciables sur ses capacités à s’acquitter de ses obligations.  </li>
+          <li>- le Client certifie que le bien loué est destiné exclusivement aux besoins de sa propre activité professionnelle et qu’il est en rapport direct avec celle-ci, et qu’il sera seul à en faire usage.</li>
+        </ul>
+        <p>  En cas d’ouverture d’une procédure de sauvegarde, de redressement ou de liquidation judiciaire, il s’engage expressément à informer le Mandataire du montant de sa dette à l’égard de la Société W EB MONETIQUE, outre de la clause de réserve de propriété contenue dans le présent contrat.  </p>
+        <h4 class="small-headings">Article 1.11 – RESPONSABILITE </h4>
+        <p>WEB MONÉTIQUE n’est tenue que d’une obligation de moyen.</p>
+        <p>  Dans l’hypothèse où la responsabilité de W EB MONÉTIQUE serait retenue en cas de faute prouvée, sa responsabilité totale, pour quelque raison que ce  soit, ne saurait excéder le montant correspondant à SIX (6) mois de location, à titre d’indemnité forfaitaire et définitive.</p>
+        <p>WEB MONÉTIQUE ne sera en aucun cas responsable des dommages indirects, accessoires, spéciaux et/ou consécutifs, notamment le gain manqué ou la perte de chiffre d’affaires. </p>
+        <h4 class="small-headings">Article 1.12 – RESTITUTION – INDEMNITE DE NON RESTITUTION  </h4>
+        <p>A l’expiration des présentes pour quelque raison que ce soit, le Client est tenu de restituer immédiatement, à ses frais et risques, le TPE dans sa globalité, en bon état de fonctionnement et complet. </p>
+        <p>En cas de non-restitution du TPE après mise en demeure restée sans effet pendant un délai de HUIT (8) jours, ou en cas de restitution dans un état incomplet ou dégradé, le Client remboursera à W EB MONETIQUE la valeur d’achat du TPE. </p>
+        <h4 class="small-headings">Article 1.13 – PROPRIETE INTELLECTUELLE  </h4>
+        <p>Le Client se voit concéder, à titre non exclusif, le droit d’utiliser le(s) logiciel(s) installés dès l’origine sur les TPE. </p>
+        <p>Le Client ne dispose que d’un droit d’usage personnel sur lesdits logiciels mis à disposition, non plus que d’aucun droit de propriété intellectuelle sur le(s) logiciel(s) qui restent la propriété exclusive de son éditeur.</p>
+        <p>Le  Client  s’engage  notamment  à  ne  pas  copier,  modifier  ou  décompiler  tout  ou  partie  des  logiciels  intégrés  dans  les  matériels,  ainsi  que  de  n’apporter  aucune modification au logiciel. Il est strictement interdit au Client de reproduire intégralement ou partiellement le logiciel, pour quelque usage que ce soit.</p>
+        <p>Le Client ne doit en aucun cas décoder ou tenter de décoder, outrepasser, ou démanteler le système de protection intégré du logiciel. La licence ne donne pas le droit d’accéder aux sources. </p>
+        <h4 class="small-headings underline">Article 1.14 – CESSION  </h4>
+        <p>Le présent contrat est conclu intuitu personae.</p>
+        <p>Le  Client  ne  peut  céder  ou  transférer  les  droits  et/ou  les  obligations,  résultant  pour  lui  du  présent  contrat  sans le  consentement  écrit  et  préalable  De  W EB MONETIQUE. </p>
+        <h4 class="small-headings ">Article 1.15 – ATTRIBUTION DE JURIDICTION</h4>
+        <p>En  cas  de  contestation  relative  à  l’interprétation  ou  à  l’exécution  du  présent  contrat,  et  à  défaut  d'un  accord  amiable,  les  parties  confèrent  au  Tribunal  de Commerce d’Aix-en-Provence une compétence exclusive pour connaître du litige.</p>
+      </div>
+      <div class="conditions-generales form-border m-top-30 small-font-info padding-b-100">
+        <h4 class="small-headings ">TITRE II – OPTION - ABONNEMENT « MONETIQUE GPRS et/ou ADSL»  </h4>
+        <p>Le présent Titre a pour objet de définir les obligations contractuelles réciproques en cas d’abonnement TPE « MONETIQUE ». </p>
+        <p>Les options relatives à l’abonnement GPRS ou ADSL sont définies aux conditions particulières du présent contrat. </p>
+        <h4 class="small-headings ">Article 2.1 – PRESTATION FOURNIE </h4>
+        <p>L’abonnement  « GPRS  MONETIQUE »  concerne  l’acheminement  des  flux  monétiques  en  GPRS  et/ou  ADSL  des  appareils  à  cartes  bancaires.</p>
+        <p>L’abonnement  ne prend pas  en compte la maintenance des appareils  à cartes bancaires, des  modems ou routeurs GPRS  ainsi que du réseau GPRS  utilisé par l’abonnement, non plus que le réseau téléphonique utilisé en cas d’abonnement A.D.S.L. </p>
+        <h3 class="small-headings ">Article 2.2 – CESSION-SOUS-LOCATION </h3>
+        <p>L’abonnement proposé ne peut pas faire l’objet de cession ou de sous-location sans l’accord express de W EB MONÉTIQUE. D’une façon générale, le CLIENT fera respecter en toute occasion et par tous les moyens et à ses frais les droits du propriétaire WEB MONÉTIQUE.  </p>
+        <h3  class="small-headings ">Article 2.3 – MAINTENANCE RESEAU IP ET MATERIEL MONETIQUE </h3>
+        <p>L’assistance technique W EB MONÉTIQUE est ouverte du lundi au vendredi, de 9h à 18h, et le samedi de 9h30 à 17h30 au 09 77 40 10 90. WEB  MONÉTIQUE  pourra  vérifier  avec  le  client  le  bon  paramétrage  du  matériel  utilisant  l’abonnement  et  ainsi  lui  signaler  le  problème  en  cas  de  panne  d’acheminement des flux monétique.</p>
+        <p>Le Service peut être perturbé sans que W EB MONÉTIQUE soit tenu de réparer les dommages subis par le Client, ce que le Client accepte lors de la souscription du Contrat,  notamment  en  cas  de  défaillance  momentanée  du  réseau  GPRS  liée à  des  travaux  d'entretien,  renforcement,  extension  des  installations  du  réseau, coupure du réseau. </p>
+        <p>La responsabilité de WEB MONÉTIQUE ne peut être engagée :</p>
+        <ul class="dotted-ul">
+          <li>En cas d’une mauvaise utilisation ou de mauvais branchement de l’appareil utilisant l’abonnement «MONETIQUE » </li>
+          <li>En cas de problème technique autre que le paramétrage de l’appareil utilisant l’abonnement « MONETIQUE » </li>
+        </ul>
+        <p>Pendant la durée de réparation d’un incident technique qui n’engage pas W EB MONÉTIQUE, l’abonnement « MONETIQUE »continuera à  être prélevé. </p>
+        <h4 class="small-headings ">Article 2.4 – PREVENANCE </h4>
+        <p>Le CLIENT doit avertir la société WEB MONÉTIQUE sous 48 heures de tout évènement affectant l’abonnement « MONETIQUE ».  </p>
+        <h4 class="small-headings ">TITRE III- OPTION MAINTENANCE   </h4>
+        <p>Le présent Titre a pour objet de définir les obligations contractuelles réciproques en cas de maintenance par échange standard   </p>
+        <h4 class="small-headings ">Article 3.1 – PRESTATION FOURNIE </h4>
+        <p>La Société W EB MONÉTIQUE s’engage à entretenir les appareils suivant les prestations définies aux conditions définies ci-après.</p>
+        <h4 class="small-headings ">Article 3.2 – OBJET DE LA MAINTENANCE </h4>
+        <p>L’entretien porte sur les équipements monétiques du CLIENT, à l’intérieur des limites que constituent la fiche d’alimentation secteur et la fiche téléphonique de l’appareil, à la suite d’un appel téléphonique. Cet entretien comprend : </p>
+        <ul class="form-smll-lists">
+          <li>- l’intervention par assistance téléphonique où se trouve l’équipement défaillant, et réparation du matériel défaillant, ou remplacement par échange standard du matériel défectueux</li>
+          <li>- l’échange gratuit des pièces devenues défectueuses, à l’exception des consommables (papier, rubans, transformateurs, batteries et câbles externes de connexion...) les pièces échangées restent la propriété de WEB MONÉTIQUE. Le CLIENT s’engage à mettre les matériels à la disposition de W EB MONÉTIQUE, pour les dépannages.</li>
+        </ul>
+        <h4 class="small-headings ">Article 3.3 – LIMITES D’INTERVENTION CONTRACTUELLES DE LA MAINTENANCE</h4>
+        <p>Les  obligations  de  la  société W EB  MONÉTIQUE  sont  limitées  aux  réparations  ou  remplacements  prévus  à  l’article  3.2  et  excluent  notamment  les  réparations ou remplacements rendus nécessaires par : </p>
+        <ol class="form-smll-lists ordered">
+          <li>- L’intervention sur les terminaux par des personnes étrangères ou non accréditées par la société W EB MONÉTIQUE </li>
+          <li>- Le mauvais état des lieux </li>
+          <li>- Des émanations chimiques </li>
+          <li>- L’humidité accidentelle ou permanente (ex : liquide renversé) </li>
+          <li>- Les chocs ou les chutes de l’appareil entier ou d’une de ses parties</li>
+          <li>- L’incendie</li>
+          <li>- Les surtensions EDF ou téléphoniques</li>
+          <li>- Les dégâts dus à la foudre </li>
+          <li>- les travaux effectués par des tierces personnes, y compris le CLIENT</li>
+          <li>- Le mauvais fonctionnement du centre de télécollecte </li>
+          <li>- L’utilisation non-conforme à la notice</li>
+        </ol>
+        <h4 class="small-headings ">Article 3.4 – RESPONSABILITE</h4>
+        <p>Le CLIENT doit avertir la société W EB MONÉTIQUE sous 48 heures de tout évènement affectant le matériel sous maintenance. </p>
+        <h4 class="small-headings ">Article 3.5 – DELAIS D’INTERVENTION </h4>
+        <p>Les interventions de W EB MONÉTIQUE auront lieu de 9h à 18h pendant la période définie, dans les 24 heures ouvrées qui suivent l’appel du CLIENT. </p>
+        <h4 class="small-headings ">TITRE IV - PORT </h4>
+        <p>Les frais d’envoi lors d’une location sont facturés selon les conditions particulières. En cas de maintenance, les frais de port restent à la charge de WEB MONETIQUE.</p>
+        <p>Toute nouvelle livraison (pour cause d’absence) sera facturée. </p>
+        <p>En aucun cas, WEB MONÉTIQUE ne sera responsable d’un quelconque retard de livraison imputable au transporteur.</p>
+        <p>Tout appareil non restitué à son échéance et pour une cause non imputable au transporteur, il sera facturé une indemnité de QUINZE (15) euros par jour de retard.</p>
+        <h4 class="small-headings">TITRE V : INFORMATIQUE ET LIBERTES</h4>
+        <p>Les informations contenues dans le présent mandat, qui doit être complété, sont destinées à n’être utilisées par le créancier que pour la gestion de sa relation avec son client. Elles pourront donner lieu à l’exercice, par ce dernier, de ses droits d’oppositions, d’accès et de rectification tels que prévus aux articles 38 et suivants de la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés.</p>
+      </div>
+
+      <div class="authorize-form autho-frm-wrap m-top-30">
+        <h5 class="autho-frm-heading a-center underline">MANDAT DE PRELEVEMENT SEPA N°ICS : FR65ZZZ588212 </h5>
+        <div class="autho-form-info">
+          <p>En  signant ce formulaire  de  mandat,  vous  autorisez  (A)  WEB  MONETIQUE  à  envoyer  des  instructions  à  votre banque pour débiter votre compte, et (B) votre banque à débiter votre compte conformément aux instructions de WEB MONETIQUE.</p>
+          <p> Vous bénéficiez du droit d’être remboursé par votre banque selon les conditions décrites dans la convention que vous  avez  passée  avec elle.  Une demande  de  remboursement  doit  être  présentée  dans  les  8  semaines  suivant la date de débit de votre compte pour un prélèvement autorisé.</p>
+        </div>
+        <div class="name-of-creditr form-border m-top-30 border-rad-10 pos-rel">
+          <h3 class="form-subsec-heading underline ">Nom du créancier : 
+                              
+            <span>WEB MONETIQUE, 2295 Route de Puyricard, 13540 Puyricard (France)</span>
+          </h3>
+          <h4 class="verticl-txt">Créancier</h4>
+        </div>
+        <div class="debtor-form form-border m-top-30 border-rad-10 pos-rel">
+          <div class="field-set social-15 ">
+            <label> Nom du débiteur :</label>
+            <input class="debiteur-name " type="text" />
+          </div>
+          <div class="field-set social-16 ">
+            <label> Rue :</label>
+            <input class="riu " type="text" />
+          </div>
+          <div class="field-set social-17">
+            <label> Code postal :</label>
+            <input class="postl-cd" type="text">
+            <label> Cedex :</label>
+            <input class="cedex" type="text">
+            <label> Ville:</label>
+            <input class="ville m-tr-0" type="text">
+          </div>
+          <h4 class="verticl-txt">Débiteur </h4>
+        </div>
+        
+        <div class="iban-form form-border m-top-30 border-rad-10">
+          <div class="field-set social-18 dashed-b">
+            <label> N° de compte IBAN :</label>
+            <input class="iban-no m-rt-15" type="text" />
+            <input class="iban-no m-rt-15" type="text" />
+            <input class="iban-no m-rt-15" type="text" />
+            <input class="iban-no m-rt-15" type="text" />
+            <input class="iban-no m-rt-15" type="text" />
+            <input class="iban-no m-rt-15" type="text" />
+            <input class="iban-no m-tr-0" type="text" />
+          </div>
+          <div class="field-set social-19 dashed-b">
+            <label> Code BIC :</label>
+            <input class="code-bic m-rt-15" type="text" />
+          </div>
+          <div class="field-set social-20">
+            <label> Pays  :</label>
+            <input class="pays m-rt-15" type="text" />
+            <label> Lieu  :</label>
+            <input class="lieu m-tr-0" type="text" />
+          </div>
+          <div class="field-set social-21">
+            <label> Signature   :</label>
+            <textarea class="sign" name="sign"></textarea>
+          </div>
+          <p class="note">  Note : Vos droits concernant le présent mandat sont expliqués dans un document que vous pouvez obtenir auprès de votre banque. </p>
+        </div>
+
+        <div class="check-box m-top-30">
+          <label>POUR UN PRELEVEMENT </label>
+          <input type="checkbox" name="recurrent" value="Bike">RECURRENT /
+                            
+                                    
+          <input type="checkbox" name="unique" value="Car">UNIQUE
+                           
+                                    
+        </div>
+        <p class="note-italic">Les informations contenues dans le présent mandat, qui doit être complété, sont destinées à n’être utilisées par le créancier que pour la gestion de sa relation avec son client. Elles pourront donner lieu à l’exercice, par ce dernier, de ses droits d’oppositions, d’accès et de rectification tels que prévus aux articles 38 et suivants de la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux liberté s.</p>
+      </div>
+      <div class="btn-grp">
+        <button class="back-btn" (click)="back()">< retourner </button>
+        <input type="button" class="submit-btn" value="Soumettre" />
+      </div>
+    </form>
+  </div>
+</div>

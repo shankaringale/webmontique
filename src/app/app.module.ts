@@ -29,6 +29,7 @@ import { PrmiumAdslPortablesComponent } from './contracts/premium/adsl/portables
 import { PremiumGprsComponent } from './contracts/premium/gprs/premium-gprs.component'
 import { PremiumGprsFixedComponent } from './contracts/premium/gprs/fixed/premium-gprs-fixed.component'
 import { PremiumGprsPortablesComponent } from './contracts/premium/gprs/portables/premium-gprs-portables.component'
+import { PrmiumTpePortableAdslComponent } from './contracts/premium/adsl/portables/forms/full-services-tpe-portable-adsl.component'
 /***   Services   ***/
 
 import { GenralService } from './genral.service'
@@ -57,7 +58,8 @@ import { GenralService } from './genral.service'
     PrmiumAdslPortablesComponent,
     PremiumGprsComponent,
     PremiumGprsFixedComponent,
-    PremiumGprsPortablesComponent
+    PremiumGprsPortablesComponent,
+    PrmiumTpePortableAdslComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),
@@ -78,6 +80,7 @@ import { GenralService } from './genral.service'
       { path: 'contrats-premium-gprs', component: PremiumGprsComponent, pathMatch: 'full'},
       { path: 'contrats-premium-gprs-fixed', component: PremiumGprsFixedComponent, pathMatch: 'full'},
       { path: 'contrats-premium-gprs-portables', component: PremiumGprsPortablesComponent, pathMatch: 'full'},
+      { path: 'contrat-location-annuelle-full-services-tpe-portable-adsl', component: PrmiumTpePortableAdslComponent, pathMatch: 'full'},
       { path: 'existing-customer-contracts', component: ExistingUserComponent, pathMatch: 'full'},
       { path: '404', component: Error404Component},
       { path: '**', redirectTo: "404"},

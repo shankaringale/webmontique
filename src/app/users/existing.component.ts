@@ -29,7 +29,7 @@ export class ExistingUserComponent implements OnInit {
             clientCardNum: this.clientCardNum
     })
 
-    console.log(this.clientId)
+    //console.log(this.clientId)
 
   }
 
@@ -40,7 +40,7 @@ export class ExistingUserComponent implements OnInit {
 	}
 
 
-	loadSession(formValues){
+	  loadSession(formValues){
         
         
         console.log(formValues)

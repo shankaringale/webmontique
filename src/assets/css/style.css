@@ -778,5 +778,20 @@ input[type=checkbox]:checked {
   background-color: #ffffff;
   border: solid 2px #3cbbd6; }
 
+.times-italic {
+  font-family: Times New Roman Italic; }
+
+.squr {
+  padding: 0; }
+  .squr li {
+    background-image: url("../images/square-li-ico.png ");
+    background-position: left center;
+    background-repeat: no-repeat;
+    list-style-type: none;
+    padding-left: 30px; }
+
+.datefield.display-inl-blk {
+  width: auto;
+  display: inline-block; }
+
 /*# sourceMappingURL=style.css.map */
-.contracts-section a .a-1 {width:260px}
