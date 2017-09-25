@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+
 //import { CreditCardDirectivesModule } from 'ng2-cc-library'
 /***     Coponents       ***/
 import { AppComponent } from './app.component';
@@ -90,7 +91,8 @@ import { GenralService } from './genral.service'
     ReactiveFormsModule
   ],
   providers: [
-    GenralService, AppSettings
+    GenralService, 
+    AppSettings
   ],
   bootstrap: [AppComponent]
 })

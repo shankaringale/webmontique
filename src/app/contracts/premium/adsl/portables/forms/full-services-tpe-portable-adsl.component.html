@@ -42,7 +42,7 @@
     <div class="sections-title">
       <h2 class="heading">ET:</h2>
     </div>
-    <form [formGroup]="contractForm" class="social-frm" (ngSubmit)="saveForm(existingCustomerForm.value)">
+    <form [formGroup]="contractForm" class="social-frm" (ngSubmit)="saveForm(contractForm.value)">
       <div class="form-border">
         <div class="field-set social-1" [ngClass]="{'error': social_reason.invalid && social_reason.dirty}">
           <label>Raison Sociale : </label>          
@@ -75,53 +75,56 @@
         <h3 class="form-subsec-heading">Adresse de livraison</h3>
         <div class="field-set social-5">
           <label>Raison sociale :</label>
-          <input class="lgl-frm" type="text" />
+          <input class="lgl-frm" type="text" formControlName="s_social_reason" [ngClass]="{'error-input': s_social_reason.invalid && s_social_reason.dirty}"/>
+
           <label>Adresse et N° Rue :</label>
-          <input class="address-et" type="text" />
-          <input class="full-width" type="text" />
+          <input class="address-et" type="text" formControlName="s_address_1" [ngClass]="{'error-input': s_address_1.invalid && s_address_1.dirty}"/>
+          <input class="full-width" type="text" formControlName="s_address_2" />
         </div>
         <div class="field-set social-6">
           <label> Code postal :</label>
-          <input class="postl-cd" type="text" />
+          <input class="postl-cd" type="text" formControlName="s_postal_code" [ngClass]="{'error-input': s_postal_code.invalid && s_postal_code.dirty}"/>
           <label> Cedex :</label>
-          <input class="cedex" type="text" />
+          <input class="cedex" type="text" formControlName="s_cedex" [ngClass]="{'error-input': s_cedex.invalid && s_cedex.dirty}"/>
           <label> Ville:</label>
-          <input class="ville" type="text" />
+          <input class="ville" type="text" formControlName="s_city" [ngClass]="{'error-input': s_city.invalid && s_city.dirty}"/>
         </div>
         <h3 class="form-subsec-heading">Nom-Prénom et qualité du signature</h3>
         <div class="field-set social-7">
           <label> Nom :</label>
-          <input class="nom" type="text" />
+          <input class="nom" type="text" formControlName="nom" [ngClass]="{'error-input': nom.invalid && nom.dirty}"/>
           <label> Prénom :</label>
-          <input class="prenom" type="text" />
+          <input class="prenom" type="text" formControlName="fname" [ngClass]="{'error-input': fname.invalid && fname.dirty}"/>
           <label> Qualité du signataire ::</label>
-          <input class="qualite-du m-tr-0" type="text" />
+          <input class="qualite-du m-tr-0" type="text" formControlName="qly_signature" [ngClass]="{'error-input': qly_signature.invalid && qly_signature.dirty}"/>
         </div>
         <div class="field-set social-8">
           <label> Téléphone mobile :</label>
-          <input class="telephn-mob" type="text" />
+          <input class="telephn-mob" type="text" formControlName="mobile_phone" [ngClass]="{'error-input': mobile_phone.invalid && mobile_phone.dirty}" digits/>
           <label> Téléphone fixe :</label>
-          <input class="telephn-fixe" type="text" />
+          <input class="telephn-fixe" type="text" formControlName="phone" [ngClass]="{'error-input': phone.invalid && phone.dirty}" digits/>
         </div>
         <div class="field-set social-9">
           <label> Mail :</label>
-          <input class="mail" type="text" />
+          <input class="mail" type="text" formControlName="email" [ngClass]="{'error-input': email.invalid && email.dirty}" email/>
         </div>
         <div class="field-set social-10">
           <label> Numéro de domiciliation carte bancaire :</label>
-          <input class="numero-bancaire" type="text" />
+          <input class="numero-bancaire" type="text" formControlName="bank_card_number" [ngClass]="{'error-input': bank_card_number.invalid && bank_card_number.dirty}"/>
+
           <label> Numéro de domiciliation sans contact :</label>
-          <input class="numero-contact" type="text" />
+          <input class="numero-contact" type="text" formControlName="contactless_number" [ngClass]="{'error-input': contactless_number.invalid && contactless_number.dirty}"/>
         </div>
         <div class="field-set social-11">
           <label> Numéro de domiciliation VAD :</label>
-          <input class="numero-vad" type="text" />
+          <input class="numero-vad" type="text" formControlName="vad" [ngClass]="{'error-input': vad.invalid && vad.dirty}"/>
+
           <label> Numéro de domiciliation AMEX :</label>
-          <input class="numero-amex" type="text" />
+          <input class="numero-amex" type="text" formControlName="amex_direct_debit_number" [ngClass]="{'error-input': amex_direct_debit_number.invalid && amex_direct_debit_number.dirty}" creditCard/>
         </div>
         <div class="field-set social-12">
           <label> Autre :</label>
-          <input class="autre" type="text" />
+          <input class="autre" type="text" formControlName="other" />
         </div>
 
         <p class="here-aftr">Ci-après dénommé(e) « LE CLIENT »</p>
@@ -133,12 +136,12 @@
         </div>
         <p>Je  soussigné, 
                             
-          <select class="commitmnt-selc">
-            <option>Monsieur</option>
-            <option>option2</option>
-            <option>option3</option>
+          <select class="commitmnt-selc" formControlName="commitmnt_initial">
+            <option value="Monsieur">Monsieur</option>
+            <option value="Mme">Mme</option>
+            <option value="Autre">Autre</option>
           </select>
-          <input class="commitmnt-inp" type="text" /> ès-qualités, certifie exact les renseignements figurant sur le présent contrat de location de Terminal de Paiement contentant contrat de maintenance, d’assistance et d’abonnement au flux monétique.
+          <input class="commitmnt-inp" type="text" formControlName="commitmnt_inp" [ngClass]="{'error-input': commitmnt_inp.invalid && commitmnt_inp.dirty}"/> ès-qualités, certifie exact les renseignements figurant sur le présent contrat de location de Terminal de Paiement contentant contrat de maintenance, d’assistance et d’abonnement au flux monétique.
                           
         </p>
         <p>Je reconnais avoir pris connaissance tant des conditions particulières (notamment celles ayant attrait aux tarifs applicables) que des conditions générales du présent contrat ci-après retranscrites, et les accepter dans toute leur teneur. </p>
@@ -164,7 +167,7 @@
         <h3 class="form-subsec-heading display-inl-blk underline m-rt-15">Type d’abonnement :</h3>
         <div class="display-inl-blk pull-right">
           <h3 class="form-subsec-heading underline display-inl-blk m-rt-15">Nombre d’abonnement : </h3>
-          <input class="num-subscriptions" type="text" />
+          <input class="num-subscriptions" type="text" formControlName="num_subscriptions" [ngClass]="{'error-input': num_subscriptions.invalid && num_subscriptions.dirty}"/>
         </div>
         <h3 class="form-subsec-heading">Location d’un Terminal de Paiement portable IWL 250 BEM sans contact  </h3>
         <h3 class="form-subsec-heading">Avec Maintenance - Assistance téléphonique et Abonnement flux monétique ADSL.</h3>
@@ -188,10 +191,20 @@
           <input class="datepicker datepicker-inp " type="text" />
         </div>
         <div class="field-set social-13 m-top-50 m-b-100">
-          <label> Fait à :</label>
-          <input class="Fait m-rt-15" type="text" />
-          <label> Le :</label>
-          <input class="Le" type="text" />
+          <div class='input-group date' id='datepicker-from'>
+            <label> Fait à :</label>
+            <input class="Fait m-rt-15 " type="text" formControlName="subscriptions_from" [ngClass]="{'error-input': subscriptions_from.invalid && subscriptions_from.dirty}"/>
+             <span class="input-group-addon">
+                    <span class="datepicker-inp"></span>
+                </span>
+          </div>
+          <div class='input-group date' id='datepicker-to'>
+            <label> Le :</label>
+            <input class="Le " type="text" formControlName="subscriptions_to" [ngClass]="{'error-input': subscriptions_to.invalid && subscriptions_to.dirty}"/>
+             <span class="input-group-addon">
+                    <span class="datepicker-inp"></span>
+                </span>
+          </div>
         </div>
       </div>
 
@@ -379,19 +392,19 @@
         <div class="debtor-form form-border m-top-30 border-rad-10 pos-rel">
           <div class="field-set social-15 ">
             <label> Nom du débiteur :</label>
-            <input class="debiteur-name " type="text" />
+            <input class="debiteur-name " type="text" formControlName="deb_name" [ngClass]="{'error-input': deb_name.invalid && deb_name.dirty}"/>
           </div>
           <div class="field-set social-16 ">
             <label> Rue :</label>
-            <input class="riu " type="text" />
+            <input class="riu " type="text" formControlName="deb_street" [ngClass]="{'error-input': deb_street.invalid && deb_street.dirty}"/>
           </div>
           <div class="field-set social-17">
             <label> Code postal :</label>
-            <input class="postl-cd" type="text">
+            <input class="postl-cd" type="text" formControlName="deb_postcode" [ngClass]="{'error-input': deb_postcode.invalid && deb_postcode.dirty}">
             <label> Cedex :</label>
-            <input class="cedex" type="text">
+            <input class="cedex" type="text" formControlName="deb_codex" [ngClass]="{'error-input': deb_codex.invalid && deb_codex.dirty}">
             <label> Ville:</label>
-            <input class="ville m-tr-0" type="text">
+            <input class="ville m-tr-0" type="text" formControlName="deb_city" [ngClass]="{'error-input': deb_city.invalid && deb_city.dirty}">
           </div>
           <h4 class="verticl-txt">Débiteur </h4>
         </div>
@@ -399,23 +412,29 @@
         <div class="iban-form form-border m-top-30 border-rad-10">
           <div class="field-set social-18 dashed-b">
             <label> N° de compte IBAN :</label>
-            <input class="iban-no m-rt-15" type="text" />
-            <input class="iban-no m-rt-15" type="text" />
-            <input class="iban-no m-rt-15" type="text" />
-            <input class="iban-no m-rt-15" type="text" />
-            <input class="iban-no m-rt-15" type="text" />
-            <input class="iban-no m-rt-15" type="text" />
-            <input class="iban-no m-tr-0" type="text" />
+            <input class="iban-no m-rt-15" type="text" formControlName="deb_iban_1" [ngClass]="{'error-input': deb_iban_1.invalid && deb_iban_1.dirty}"/>
+
+            <input class="iban-no m-rt-15" type="text" formControlName="deb_iban_2" [ngClass]="{'error-input': deb_iban_2.invalid && deb_iban_2.dirty}"/>
+
+            <input class="iban-no m-rt-15" type="text" formControlName="deb_iban_3" [ngClass]="{'error-input': deb_iban_3.invalid && deb_iban_3.dirty}"/>
+
+            <input class="iban-no m-rt-15" type="text" formControlName="deb_iban_4" [ngClass]="{'error-input': deb_iban_4.invalid && deb_iban_4.dirty}"/>
+
+            <input class="iban-no m-rt-15" type="text" formControlName="deb_iban_5" [ngClass]="{'error-input': deb_iban_5.invalid && deb_iban_5.dirty}"/>
+
+            <input class="iban-no m-rt-15" type="text" formControlName="deb_iban_6" [ngClass]="{'error-input': deb_iban_6.invalid && deb_iban_6.dirty}"/>
+
+            <input class="iban-no m-tr-0" type="text" formControlName="deb_iban_7" [ngClass]="{'error-input': deb_iban_7.invalid && deb_iban_7.dirty}"/>
           </div>
           <div class="field-set social-19 dashed-b">
             <label> Code BIC :</label>
-            <input class="code-bic m-rt-15" type="text" />
+            <input class="code-bic m-rt-15" type="text" formControlName="deb_bic_code" [ngClass]="{'error-input': deb_bic_code.invalid && deb_bic_code.dirty}"/>
           </div>
           <div class="field-set social-20">
             <label> Pays  :</label>
-            <input class="pays m-rt-15" type="text" />
+            <input class="pays m-rt-15" type="text" formControlName="deb_pays" [ngClass]="{'error-input': deb_pays.invalid && deb_pays.dirty}"/>
             <label> Lieu  :</label>
-            <input class="lieu m-tr-0" type="text" />
+            <input class="lieu m-tr-0" type="text" formControlName="deb_location" [ngClass]="{'error-input': deb_location.invalid && deb_location.dirty}"/>
           </div>
           <div class="field-set social-21">
             <label> Signature   :</label>
@@ -437,7 +456,7 @@
       </div>
       <div class="btn-grp">
         <button class="back-btn" (click)="back()">< retourner </button>
-        <input type="button" class="submit-btn" value="Soumettre" />
+        <input type="submit" class="submit-btn" value="Soumettre" [disabled]="contractForm.invalid" />
       </div>
     </form>
   </div>
